@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Html salva</title>
+</head> 
+<style>
+    body{
+        background-image: url(Selva.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .botao-logo{
+            font-size: 40px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            outline: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .botao-login-1{
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            border: 3px solid white;
+            border-radius: 10px;
+            font-size: 30px;
+            padding: 15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        }
+        .botao-login-1:hover{
+            background-color: white;
+            transition: 0.8s;
+            color: black;
+            cursor: pointer;
+        }
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px;
+            font-size: 25px;
+        }
+       
+        .pesquisar{
+            margin: 30px;
+        }
+        .tela-de-login{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+            align-items: center;
+            padding: 50px;
+            backdrop-filter: blur(20px);
+            border: 2px solid white;
+        }
+        .registration{
+            font-size: 40px;
+            margin-left: 70px;
+        }
+        .perguntas{
+            width: 350px;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0);
+            border-bottom: 2px solid black;   
+        }
+        .botao-register{
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: rgb(11, 11, 34);
+            color: white;
+            font-size: 18px;
+        }
+        ::placeholder{
+            color: black;
+        }
+        .ja-tem-conta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .Forgot-Password{
+            color: black;
+        } 
+        .x-foto{
+            width: 60px;
+            position: relative;
+            top: -25%;
+            left: 155%;
+            transform: translate(-50%,-50%);
+            border-radius: 0 15px 0 10px;
+        }
+        .topo-tela-de-login{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+</style>
+<body>
+    <div class="conteiner">
+        <div>
+            <header>
+                <nav>
+                    <div class="cabecalho">
+                        <div class="logo">
+                            <button class="botao-logo"><b>Logo</b></button>
+                        </div>
+                        <div class="pesquisar-cabecalho">
+                            <a class="home pesquisar" href=""><b>Home</b></a>
+                            <a class="About pesquisar" href=""><b>About</b></a>
+                            <a class="Services pesquisar" href=""><b>Services</b></a>
+                            <a class="Contact pesquisar" href=""><b>Contact</b></a>
+                            <button class="botao-login-1">Login</button>
+                        </div> 
+                    </div>
+                </nav>     
+            </header>
+            <main>
+                <div class="tela-de-login">
+                    <div class="topo-tela-de-login">
+                        <h1 class="registration"><b>Registration</b></h1>
+                        <div>
+                            <a  href=""><img class="x-foto"src="x.PNG" alt="#"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <input class="perguntas" type="text" placeholder="Username">
+                        <br><br>
+                        <input class="perguntas" type="text" placeholder="Email">
+                        <br><br>
+                        <input class="perguntas" type="password" placeholder="Password">
+                        <br><br>
+                        <div>
+                            <input type="checkbox" id="remeber-me">
+                             <label for="remeber-me">I agree to the terms & conditions</label>
+                        </div>
+                        <br>
+                        <button class="botao-register"><b>Register</b></button>
+                        <br><br>
+                        <div class="ja-tem-conta">
+                            <p> Already have an account?<b> Login</b></p>
+                        </div>
+                    </div>
+                </div>
+               
+            </main>
+
+        </div>
+    </div>
+</body>
+</html>
